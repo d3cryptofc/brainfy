@@ -22,7 +22,7 @@ def test_increase_must_increase_column_value(increases, expected):
     i = Interpreter(length=1)
     for _ in range(increases):
         i.increase()
-    assert i.value == expected
+    assert i.decimal == expected
 
 
 @pytest.mark.parametrize(('decreases', 'expected'), [
@@ -35,7 +35,7 @@ def test_decrease_must_decrease_column_value(decreases, expected):
     i = Interpreter(length=1)
     for _ in range(decreases):
         i.decrease()
-    assert i.value == expected
+    assert i.decimal == expected
 
 
 @pytest.mark.parametrize(('forwards', 'expected'), [

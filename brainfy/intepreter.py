@@ -17,7 +17,7 @@ class Interpreter:
         self.__pointer = 0
 
     @property
-    def value(self) -> int:
+    def decimal(self) -> int:
         return self.__columns[self.__pointer]
 
     @property
