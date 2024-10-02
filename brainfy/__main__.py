@@ -18,11 +18,11 @@ def main() -> None:
     )
     args = parser.parse_args()
 
-    Interpreter().run(args.FILE)
+    try:
+        Interpreter().run(args.FILE)
+    except RuntimeError as e:
+        print('ERROR:', str(e), file=sys.stderr)
+        exit(1)
 
 
-try:
-    main()
-except RuntimeError as e:
-    print('ERROR:', str(e), file=sys.stderr)
-    exit(1)
+
