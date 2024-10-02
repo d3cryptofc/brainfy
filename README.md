@@ -29,3 +29,20 @@
 # I will use a loop to decrease until it reaches 0.
 [-]
 ```
+
+---
+
+#### ⚙️ Command Usage
+
+```
+usage: brainfy [-h] FILE
+
+An amazing interpreter for the esoteric language brainf*ck written in Python.
+
+positional arguments:
+  FILE        read BF script instructions from file
+
+optional arguments:
+  -h, --help  show this help message and exit
+```
+
