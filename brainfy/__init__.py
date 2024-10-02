@@ -1,1 +1,1 @@
-from .intepreter import Interpreter  # noqa
+from .interpreter import Interpreter  # noqa
