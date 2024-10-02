@@ -50,3 +50,14 @@ def test_forward_must_move_pointer_to_forward_column(forwards, expected):
         i.forward()
     assert i.pointer == expected
 
+
+@pytest.mark.parametrize(('previous', 'expected'), [
+    (0, 0),
+    (1, 9),
+    (5, 5),
+])
+def test_previous_must_move_pointer_to_previous_column(previous, expected):
+    i = Interpreter(length=10)
+    for _ in range(previous):
+        i.previous()
+    assert i.pointer == expected
