@@ -27,3 +27,19 @@ class Interpreter:
     @property
     def columns(self) -> list[int]:
         return self.__columns
+
+    def _update_value(self, *, up: bool) -> None:
+        pointer = self.__pointer
+        columns = self.__columns
+        value = columns[pointer]
+
+        if up and value >= 255:
+            columns[pointer] = 0
+        elif up:
+            columns[pointer] += 1
+
+        if not up and value <= 0:
+            columns[pointer] = 255
+        elif not up:
+            columns[pointer] -= 1
+
