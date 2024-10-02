@@ -1,0 +1,13 @@
+[tool.poetry]
+name = "brainfy"
+version = "0.1.0"
+description = "Interpreter for the esoteric language brainf*ck written in Python."
+authors = ["Lelzin λ <d3cryptofc@gmail.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
