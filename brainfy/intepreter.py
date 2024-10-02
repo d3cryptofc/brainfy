@@ -55,3 +55,8 @@ class Interpreter:
         else:
             self.__pointer = 0
 
+    def previous(self) -> None:
+        if self.__pointer > 0:
+            self.__pointer -= 1
+        else:
+            self.__pointer = self.__length - 1
