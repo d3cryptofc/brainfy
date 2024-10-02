@@ -49,3 +49,9 @@ class Interpreter:
     def decrease(self) -> None:
         self._update_value(up=False)
 
+    def forward(self) -> None:
+        if self.__pointer < self.__length:
+            self.__pointer += 1
+        else:
+            self.__pointer = 0
+
