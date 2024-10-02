@@ -46,3 +46,6 @@ class Interpreter:
     def increase(self) -> None:
         self._update_value(up=True)
 
+    def decrease(self) -> None:
+        self._update_value(up=False)
+
