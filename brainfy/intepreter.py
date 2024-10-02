@@ -21,6 +21,10 @@ class Interpreter:
         return self.__columns[self.__pointer]
 
     @property
+    def ascii(self) -> int:
+        return chr(self.decimal)
+
+    @property
     def pointer(self) -> int:
         return self.__pointer
 
