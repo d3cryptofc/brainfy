@@ -43,3 +43,6 @@ class Interpreter:
         elif not up:
             columns[pointer] -= 1
 
+    def increase(self) -> None:
+        self._update_value(up=True)
+
