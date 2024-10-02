@@ -1,5 +1,10 @@
 from __future__ import annotations
 
+from typing import TextIO
+
+from .parser import parse_brackets
+from .tokenizer import Tokens, tokenize
+
 
 class Interpreter:
     def __init__(self, length: int = 20) -> None:
@@ -80,3 +85,34 @@ class Interpreter:
             self.__pointer -= 1
         else:
             self.__pointer = self.__length - 1
+
+    def run(self, file: TextIO) -> None:
+        script_tokens = list(tokenize(file))
+        script_tokens_length = len(script_tokens)
+
+        bracket_position_map = parse_brackets(script_tokens)
+
+        running = True
+        cursor = 0
+
+        while running:
+            _, token = script_tokens[cursor]
+
+            if token == Tokens.PLUS:
+                self.increase()
+            elif token == Tokens.MINUS:
+                self.decrease()
+            elif token == Tokens.GREATER:
+                self.forward()
+            elif token == Tokens.LESS:
+                self.previous()
+            elif token == Tokens.DOT:
+                print(self.ascii, end='')
+            elif (token == Tokens.BRACKET_START and self.decimal == 0
+                or token == Tokens.BRACKET_END and self.decimal != 0):
+                cursor = bracket_position_map[cursor]
+
+            if cursor + 1 <= script_tokens_length - 1:
+                cursor += 1
+            else:
+                running = False
