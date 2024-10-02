@@ -16,3 +16,6 @@ class Interpreter:
         self.__columns = [0] * length
         self.__pointer = 0
 
+    @property
+    def columns(self) -> list[int]:
+        return self.__columns
