@@ -30,7 +30,7 @@ class Interpreter:
 
     @property
     def columns(self) -> list[int]:
-        return self.__columns
+        return self.__columns.copy()
 
     def _update_value(self, *, up: bool) -> None:
         pointer = self.__pointer
