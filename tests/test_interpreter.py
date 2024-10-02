@@ -37,3 +37,16 @@ def test_decrease_must_decrease_column_value(decreases, expected):
         i.decrease()
     assert i.value == expected
 
+
+@pytest.mark.parametrize(('forwards', 'expected'), [
+    (0, 0),
+    (5, 5),
+    (10, 10),
+    (11, 0)
+])
+def test_forward_must_move_pointer_to_forward_column(forwards, expected):
+    i = Interpreter(length=10)
+    for _ in range(forwards):
+        i.forward()
+    assert i.pointer == expected
+
