@@ -46,3 +46,14 @@ optional arguments:
   -h, --help  show this help message and exit
 ```
 
+#### 🌟 Currently Available Tokens
+
+| Token           | Description                                                   |
+|:---------------:|---------------------------------------------------------------|
+| **#**           | Create safe comments (isn't multiline).                       |
+| **.**           | Print current decimal value as ASCII.                         |
+| **+**           | Increase +1 to current decimal value.                         |
+| **-**           | Decrease -1 to current decimal value.                         |
+| **>**           | Move pointer to next address space.                           |
+| **<**           | Move pointer to previous address space.                       |
+| **[**`EXP`**]** | Repeat given expression while current decimal value is not 0. |
