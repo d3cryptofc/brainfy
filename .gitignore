@@ -1,0 +1,6 @@
+.python-version
+.venv
+.pytest_cache
+poetry.lock
+*.bf
+__pycache__
