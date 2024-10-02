@@ -16,6 +16,22 @@ class Interpreter:
         self.__columns = [0] * length
         self.__pointer = 0
 
+    def __repr__(self):
+        return (
+            '{}<'
+            'pointer={!r}, '
+            'decimal={!r}, '
+            'ascii={!r}, '
+            'length={!r}'
+            '>'
+        ).format(
+            type(self).__name__,
+            self.pointer,
+            self.decimal,
+            self.ascii,
+            self.__length
+        )
+
     @property
     def decimal(self) -> int:
         return self.__columns[self.__pointer]
