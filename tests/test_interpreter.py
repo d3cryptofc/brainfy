@@ -24,3 +24,16 @@ def test_increase_must_increase_column_value(increases, expected):
         i.increase()
     assert i.value == expected
 
+
+@pytest.mark.parametrize(('decreases', 'expected'), [
+    (1, 255),
+    (2, 254),
+    (255, 1),
+    (256, 0)
+])
+def test_decrease_must_decrease_column_value(decreases, expected):
+    i = Interpreter(length=1)
+    for _ in range(decreases):
+        i.decrease()
+    assert i.value == expected
+
