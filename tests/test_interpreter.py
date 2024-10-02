@@ -2,7 +2,7 @@ from __future__ import annotations
 
 import pytest
 
-from brainfy.intepreter import Interpreter
+from brainfy import Interpreter
 
 
 @pytest.mark.parametrize(('length', 'columns'), [
