@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "brainfy"
-version = "0.1.0"
+version = "0.1.3"
 description = "Interpreter for the esoteric language brainf*ck written in Python."
 authors = ["Lelzin λ <d3cryptofc@gmail.com>"]
 license = "MIT"

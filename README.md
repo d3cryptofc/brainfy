@@ -4,7 +4,7 @@
 </p>
 
 <p align="center">
-  <a href="https://pypi.org/project/brainfy"><img src="https://img.shields.io/badge/v0.1.0-8A2BE2?style=flat-square&label=Version&labelColor=282C34"></a>
+  <a href="https://pypi.org/project/brainfy"><img src="https://img.shields.io/badge/v0.1.3-8A2BE2?style=flat-square&label=Version&labelColor=282C34"></a>
   <a href="https://github.com/d3cryptofc/brainfy/actions/workflows/ci.yml"><img alt="GitHub Actions Workflow Status" src="https://img.shields.io/github/actions/workflow/status/d3cryptofc/brainfy/ci.yml?style=flat-square&labelColor=282C34&label=Python 3.8 | 3.9 | 3.10 | 3.11 | 3.12&color=8A2BE2&logo=python&logoColor=white"></a>
   <img alt="GitHub License" src="https://img.shields.io/github/license/d3cryptofc/brainfy?style=flat-square&labelColor=282C34&color=8A2BE2">
 </p>
