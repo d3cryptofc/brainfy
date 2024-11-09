@@ -1,5 +1,5 @@
 <p align="center">
-  <img title="Fun fact: the sketch for this art cost me R$100. I know, it's sad." align="center" width="170" src="https://svgur.com/i/1B3H.svg"/><br><br>
+  <img title="Fun fact: the sketch for this art cost me R$100. I know, it's sad." align="center" width="170" src="https://gist.githubusercontent.com/d3cryptofc/8f6c33dc2c4f124bb065e428f3217571/raw/d78132287e850c8e85e269831725e9292e7a8821/brainfy.svg"/><br><br>
   Amazing interpreter for the esoteric language brainf*ck written in Python.
 </p>
 
